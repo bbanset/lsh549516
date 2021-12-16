@@ -1,0 +1,263 @@
+:root {
+    /* Size */
+    --padding: 12px;
+    --avatar-size: 36px;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 65%;
+    float: left;
+}
+
+aside{
+    width: 35%;
+    float: left;
+}
+
+ul{
+    list-style: none;
+}
+
+button,
+button :focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+body{
+    font-family: Roboto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: sticky; 
+    top: 0; 
+}
+
+header .logo{
+    font-size: var(--font-large);
+}
+
+header .logo i{
+    color: red;
+}
+
+header .icons .fa-search{
+    margin-right: var(--padding);
+}
+
+.videoplay{
+    /* position: sticky; */
+    /* top: 0; */
+    background-color: rgb(249, 249, 249);
+}
+
+.videoplay .video{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.videoplay .video video{
+    height: 70%;
+    width: 70%;
+    max-width: 1000px;
+}
+
+body > .information{
+    padding: var(--padding);
+}
+
+.information .title{
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+
+.information .views{
+    font-size: var(--font-medium);
+    color: darkgray;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.information .views .up{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    margin-right: 10px;
+}
+
+.information .views .down{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    margin-right: 10px;
+}
+
+.information .views .share{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    margin-right: 10px;
+}
+
+.information .views .save{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    margin-right: 20px;
+}
+
+.information .views .more{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    margin-right: 15px;
+}
+
+
+
+.information .channel{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+
+.information .channel .metadata{
+    display: flex;
+    align-items: center;
+}
+
+.information .channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.information .channel .metadata img{
+    width:  35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+
+.information .channel .metadata .info .name{
+    margin-left: 10px;
+    font-size: var(--font-medium);
+}
+
+.information .channel .metadata .info .subscribers{
+    font-size: var(--font-small);
+    color: darkgray;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.information .channel .subscribe{
+    text-transform: uppercase;
+    color: red;
+    font-size: var(--font-medium);
+    background-color: rgb(249, 249, 249);
+    margin-right: 10px;
+}
+
+.information .add{
+    border-bottom: 1px solid lightgray;
+}
+
+.videoplay .name img{
+    width:  35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+.videoplay .name{
+    display: flex;
+}
+.videoplay .name .typing{
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: var(--font-medium);
+}
+.videoplay .name .typing input{
+    border:none;
+    outline: none;
+    width: 200px;
+    border-bottom: 1px solid lightgray; 
+    background-color: rgb(249, 249, 249);
+}
+
+
+
+
+
+.nextvideo{
+    padding: 0 var(--padding);
+    background-color: rgb(249, 249, 249);
+}
+
+.nextvideo > .title{
+    font-size: var(--font-medium);
+    margin-bottom: 8px;
+}
+
+.nextvideo .item{
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.nextvideo .item .img{
+    flex: 1 1 35%;
+    margin-right: var(--padding);
+}
+
+.nextvideo .item .img img{
+    width: 100%;
+}
+
+.nextvideo .item .info{
+    flex: 1 1 60%;
+}
+
+.nextvideo .item .moreBtn{
+    flex: 1 1 5%;
+    background-color: rgb(249, 249, 249);
+}
+
+.nextvideo .item .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.nextvideo .item .info .title{
+    font-size: var(--font-medium);
+}
+
+.nextvideo .item .info .name,
+.nextvideo .item .info .views{
+    font-size: var(--font-small);
+    color: darkgray;
+}
+
+
